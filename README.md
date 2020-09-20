@@ -20,6 +20,10 @@ It is possible to choose one implementation and then in the future upgrade the d
 
 All three implementations pass the same tests.
 
+diamond-1 and diamond-2 use less gas to add/replace/remove functions.
+
+diamond-3 uses less gas to call the diamond loupe functions.
+
 diamond-1 and diamond-2 are implemented the same way except that diamond-2 is gas optimized. To understand how diamond-2 is implemented look at diamond-1 first.
 
 ### Diamond Repositories
