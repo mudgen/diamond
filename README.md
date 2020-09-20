@@ -49,7 +49,7 @@ The `facetAddress` loupe function has a low fixed gas cost in all implementation
 
 diamond-2 is implemented the same way as diamond-1 except that the `selectors` array is implemented as a mapping of 32-byte storage slots and uses various gas-optimizations to reduce storage reads and writes.
 
-It is gas-optimized for adding/replacing/removing functions on a diamond.
+This implementation is gas-optimized for adding/replacing/removing functions on a diamond.
 
 It's `facets`, `facetFunctionSelectors`, `facetAddresses` loupe functions should not be called in on-chain transactions because their gas cost is too high. These functions should be called by off-chain software.
 
