@@ -1,5 +1,7 @@
 # Diamond Reference Implementations
 
+A diamond implementation implements [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
+
 Every diamond implementation implements the following:
 
 1. **diamondCut function** Standard function used to add/replace/remove functions on a diamond.
@@ -53,6 +55,6 @@ The `facetAddress` loupe function has a low gas cost in all implementations and 
 
 1. Has a `mapping(bytes4 => FacetAddressAndPosition) selectorToFacetAndPosition` mapping that maps each function selector to its facet address and its position in the `facetFunctionSelectors[facetAddress].functionSelectors` array.
 
-The standard loupe functions `facets`, `facetFunctionSelectors`, `facetAddresses` can be called in on-chain transactions. Note that if a diamond has a great many functions and/or facets these functions may cause an out-of-gas error.
+The standard loupe functions `facets`, `facetFunctionSelectors`, `facetAddresses` **can** be called in on-chain transactions. Note that if a diamond has a great many functions and/or facets these functions may cause an out-of-gas error.
 
 The `facetAddress` loupe function has a low gas cost in all implementations and can be called in on-chain transactions.
