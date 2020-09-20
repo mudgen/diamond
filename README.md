@@ -16,7 +16,7 @@ Here is a breakdown of the differences between the three implementations. The ra
 | diamond-2      | high                     | low                    | high                | high              |
 | diamond-3      | medium                   | high                   | low                 | low               |
 
-I would use diamond-2 for its low gas costs to add/replace/remove functions. It is possible to choose one implementation and then in the future upgrade the diamond to switch to a different implementation.
+It is possible to choose one implementation and then in the future upgrade the diamond to switch to a different implementation.
 
 All three implementations pass the same tests.
 
