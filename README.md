@@ -2,6 +2,8 @@
 
 A diamond implementation implements [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
 
+Diamonds enable you to build efficient, powerful, flexible, modular contract systems.
+
 Every diamond implementation implements the following:
 
 1. **diamondCut function** Standard function used to add/replace/remove functions on a diamond.
