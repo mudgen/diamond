@@ -33,7 +33,7 @@ Links to diamond reference implementation repositories:
 #### How diamond-1 is implemented
 
 1. Has an `bytes4[] selectors` array that stores the function selectors of a diamond.
-2. Has a `mapping(bytes4 => FacetAddressAndSelectorPosition) facetAddressAndSelectorPosition` mapping that maps each function selector to its facet address and to its position in the `selectors` array.
+2. Has a `mapping(bytes4 => FacetAddressAndSelectorPosition) facetAddressAndSelectorPosition` mapping that maps each function selector to its facet address and its position in the `selectors` array.
 
 It's `facets`, `facetFunctionSelectors`, `facetAddresses` loupe functions should not be called in on-chain transactions because their gas cost is too high. These functions should be called by off-chain software.
 
@@ -41,7 +41,7 @@ The `facetAddress` loupe function has a low gas cost in all implementations and 
 
 #### How diamond-2 is implemented
 
-diamond-2 is implemented the same way as diamond-1 except that the `selectors` array is implemented as a mapping of 32 byte storage slots and uses various other gas-optimizations to reduce storage reads and writes.
+diamond-2 is implemented the same way as diamond-1 except that the `selectors` array is implemented as a mapping of 32 byte storage slots and uses various gas-optimizations to reduce storage reads and writes.
 
 It's `facets`, `facetFunctionSelectors`, `facetAddresses` loupe functions should not be called in on-chain transactions because their gas cost is too high. These functions should be called by off-chain software.
 
