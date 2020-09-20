@@ -37,7 +37,7 @@ Links to diamond reference implementation repositories:
 
 It's `facets`, `facetFunctionSelectors`, `facetAddresses` loupe functions should not be called in on-chain transactions because their gas cost is too high. These functions should be called by off-chain software.
 
-The `facetAddress` loupe function has a low gas cost in all implementations and can be called in on-chain transactions.
+The `facetAddress` loupe function has a low fixed gas cost in all implementations and can be called in on-chain transactions.
 
 #### How diamond-2 is implemented
 
@@ -55,6 +55,6 @@ The `facetAddress` loupe function has a low gas cost in all implementations and 
 
 1. Has a `mapping(bytes4 => FacetAddressAndPosition) selectorToFacetAndPosition` mapping that maps each function selector to its facet address and its position in the `facetFunctionSelectors[facetAddress].functionSelectors` array.
 
-The standard loupe functions `facets`, `facetFunctionSelectors`, `facetAddresses` **CAN** be called in on-chain transactions. Note that if a diamond has a great many functions and/or facets these functions may cause an out-of-gas error.
+The standard loupe functions `facets`, `facetFunctionSelectors`, `facetAddresses` **CAN** be called in on-chain transactions. Note that if a diamond has a great many functions and/or facets these functions may still cause an out-of-gas error.
 
-The `facetAddress` loupe function has a low gas cost in all implementations and can be called in on-chain transactions.
+The `facetAddress` loupe function has a low fixed gas cost in all implementations and can be called in on-chain transactions.
