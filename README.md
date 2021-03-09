@@ -9,7 +9,7 @@ Every diamond implementation implements the following:
 1. **diamondCut function** Standard function used to add/replace/remove functions on a diamond.
 2. **Loupe functions** Four standard functions used to show what functions and facets a diamond has.
 
-There are three diamond reference implementations that have different benefits and disadvantages in terms of code complexity and gas costs.
+There are three diamond reference/example implementations that have different benefits and disadvantages in terms of code complexity and gas costs.
 Here is a breakdown of the differences between the three implementations. The ratings (high, medium, low) are in relation to each other.
 
 | Implementation | diamondCut<br>complexity | diamondCut<br>gas cost | loupe<br>complexity | loupe<br>gas cost |
