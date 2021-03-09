@@ -1,6 +1,6 @@
 # Diamond Reference Implementations
 
-A diamond implementation implements [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535).
+A diamond implementation implements [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535). These are examples of diamond implementations. 
 
 Diamonds enable you to build efficient, powerful, flexible, modular contract systems.
 
