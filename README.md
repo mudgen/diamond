@@ -1,4 +1,4 @@
-# Diamond Reference Implementations
+# Diamond Implementations
 
 A diamond implementation implements [EIP-2535 Diamond Standard](https://eips.ethereum.org/EIPS/eip-2535). These are examples of diamond implementations. 
 
