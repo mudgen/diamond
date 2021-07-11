@@ -32,9 +32,9 @@ diamond-1 and diamond-2 are implemented the same way except that diamond-2 is ga
 
 Links to diamond reference implementation repositories:
 
-- [diamond-1](https://github.com/mudgen/diamond-1)
-- [diamond-2](https://github.com/mudgen/diamond-2)
-- [diamond-3](https://github.com/mudgen/diamond-3)
+- [diamond-1-hardhat](https://github.com/mudgen/diamond-1-hardhat)
+- [diamond-2-hardhat](https://github.com/mudgen/diamond-2-hardhat)
+- [diamond-3-hardhat](https://github.com/mudgen/diamond-3-hardhat)
 
 #### How diamond-1 is implemented
 
